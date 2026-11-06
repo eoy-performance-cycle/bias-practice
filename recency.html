@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Whole year or last month? | Bias practice | Floward People &amp; Culture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="wrap">
+<header><span class="wm"></span><span>People &amp; Culture</span></header>
+<main id="app" aria-live="polite"></main>
+</div>
+<script>window.C = {"bias": "Recency Bias", "title": "Whole year or last month?", "num": "4 of 4", "intro": "Read each review comment. Decide whether it reflects the whole year or just the latest moment, then justify your answer.", "labels": ["Whole year", "Latest moment"], "items": [{"who": "Sami, Category Manager", "text": "Sami’s big mistake last month says everything about his reliability.", "answer": 1, "why": "One recent event is standing in for the whole review period."}, {"who": "Huda, Senior Buyer", "text": "Across the year, Huda met 11 of 12 monthly targets. The one miss in September was recovered the following month.", "answer": 0, "why": "The full period is reviewed and the one miss is weighed in proportion."}, {"who": "Ahmed, Data Analyst", "text": "Ahmed has been brilliant these last few weeks, so I am rating his whole year as outstanding.", "answer": 1, "why": "Recency works in both directions. A strong finish can inflate a rating just as a late mistake can deflate one."}], "fix": "Sami", "fixPrompt": "Rewrite the comment about Sami so it reflects the whole year. What would you need to know?", "fixHint": "For example: Sami met his sourcing targets in three of four quarters; one late-year error was corrected within a week.", "key": "recency", "reflect": "have I reviewed the full performance period, not just the last few weeks?", "others": [["halo.html", "Halo Effect", "Halo or evidence?"], ["similarity.html", "Similarity Bias", "Results or rapport?"], ["contrast.html", "Contrast Bias", "Role or comparison?"]]};</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
