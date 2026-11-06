@@ -1,5 +1,4 @@
-/* paste test */
-line2:root { --teal:#00677F; --teal-600:#005063; --teal-50:#E6F0F2; --ivory:#FFFBF5; --ivory-200:#F7F0E6; --ivory-300:#EDE3D4;
+:root { --teal:#00677F; --teal-600:#005063; --teal-50:#E6F0F2; --ivory:#FFFBF5; --ivory-200:#F7F0E6; --ivory-300:#EDE3D4;
           --charcoal:#181817; --charcoal-400:#5C5C56; --orange:#FD622A; --orange-50:#FFF3EE; --orange-700:#A83310; }
   * { box-sizing:border-box; } html, body { margin:0; }
   body { background:var(--ivory); color:var(--charcoal); font:400 17px/1.65 Inter, system-ui, sans-serif; -webkit-font-smoothing:antialiased; }
