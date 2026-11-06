@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halo or evidence? | Bias practice | Floward People &amp; Culture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="wrap">
+<header><span class="wm"></span><span>People &amp; Culture</span></header>
+<main id="app" aria-live="polite"></main>
+</div>
+<script>window.C = {"bias": "Halo Effect", "title": "Halo or evidence?", "num": "1 of 4", "intro": "Read each review comment. Decide whether it rests on evidence or on a halo, then justify your answer.", "labels": ["Evidence", "Halo"], "items": [{"who": "Rania, Marketing Specialist", "text": "Rania is our best presenter, so I have rated her highly on planning and budgeting too.", "answer": 1, "why": "Presenting well says nothing about planning or budgeting. Each competency needs its own evidence."}, {"who": "Omar, Procurement Analyst", "text": "Omar closed 11 of 12 supplier contracts on time and reduced costs by 6%, so I rated his delivery highly.", "answer": 0, "why": "The rating is tied to specific, measurable results in the area being rated."}, {"who": "Faisal, Account Manager", "text": "Everyone loves working with Faisal. His overall rating should be at the top of the scale.", "answer": 1, "why": "Being well liked is real, but it is an impression, not evidence of overall performance."}], "fix": "Faisal", "fixPrompt": "Rewrite the comment about Faisal so it rests on evidence. What would you need to know?", "fixHint": "For example: Faisal met 9 of 10 client targets this year and resolved escalations within two days.", "key": "halo", "reflect": "am I rating actual performance in each area, or my overall impression of this person?", "others": [["similarity.html", "Similarity Bias", "Results or rapport?"], ["contrast.html", "Contrast Bias", "Role or comparison?"], ["recency.html", "Recency Bias", "Whole year or last month?"]]};</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
