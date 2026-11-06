@@ -3,15 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bias practice | Floward People &amp; Culture</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+<title>Bias Lab | Manager Evaluation Practice | Floward</title>
+<link rel="stylesheet" href="star.css">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<div class="wrap">
-<header><span class="wm"></span><span>People &amp; Culture</span></header>
-<main><div class="hero"><p class="eyebrow">Manager Evaluation · 8 to 15 Nov</p><h1>Avoiding bias in performance evaluations</h1><p style="margin:0">Four short practice activities, one for each video.</p></div><div class="links"><a href="halo.html">Halo Effect: Halo or evidence?</a><a href="similarity.html">Similarity Bias: Results or rapport?</a><a href="contrast.html">Contrast Bias: Role or comparison?</a><a href="recency.html">Recency Bias: Whole year or last month?</a></div></main>
+<div class="gate" id="emailGate">
+  <div class="gate-card">
+    <div class="gate-logo brand-logo" role="img" aria-label="Floward"></div>
+    <div class="gate-kicker">Manager Evaluation Practice</div>
+    <h1 class="gate-title">Bias Lab</h1>
+    <p class="gate-desc">Enter your Floward email to begin.</p>
+    <form class="gate-form" id="gateForm" novalidate>
+      <label class="form-label" for="emailInput" style="margin-bottom:0;">Floward Email</label>
+      <input type="email" class="form-input" id="emailInput" placeholder="name@floward.com" autocomplete="email" maxlength="80" required>
+      <div class="gate-error" id="emailError" role="alert"></div>
+      <button type="submit" class="btn btn-primary">Continue →</button>
+    </form>
+    <div class="gate-note">Only @floward.com addresses can access this practice.</div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo-img brand-logo" role="img" aria-label="Floward"></div>
+    <span class="logo-text">Floward L&amp;D</span>
+  </div>
+  <div class="nav-right">
+    <button class="learner-name-display hidden" id="learnerDisplay" style="cursor:pointer;font:inherit;font-size:13px" title="Not you? Click to change"></button>
+  </div>
+</header>
+<div class="screen active">
+  <div class="home-hero">
+    <div class="hero-subtitle">Manager Evaluation Practice</div>
+    <h1 class="hero-title">Bias <span>Lab</span></h1>
+    <p class="hero-desc"><span id="welcome"></span>Practice spotting bias in performance evaluations. Each part matches a video in the Bias Series: read real-style review comments, decide what is shaping the rating, then fix one.</p>
+  </div>
+  <div class="section-label">Bias Series</div>
+  <div class="card-grid">
+    <a class="activity-card" href="halo.html"><div class="card-module">Part 1: Bias Series</div><h3 class="card-title">Halo Effect</h3><p class="card-desc"><strong>Halo or evidence?</strong> Decide whether each review comment rests on evidence or on one strong impression.</p><div class="card-footer"><span class="card-badge">3 Cases</span><span class="card-arrow">→</span></div></a>
+    <a class="activity-card" href="similarity.html"><div class="card-module">Part 2: Bias Series</div><h3 class="card-title">Similarity Bias</h3><p class="card-desc"><strong>Results or rapport?</strong> Decide whether each review comment rests on results or on rapport.</p><div class="card-footer"><span class="card-badge">3 Cases</span><span class="card-arrow">→</span></div></a>
+    <a class="activity-card" href="contrast.html"><div class="card-module">Part 3: Bias Series</div><h3 class="card-title">Contrast Bias</h3><p class="card-desc"><strong>Role or comparison?</strong> Decide whether each review comment rates against the role or against a colleague.</p><div class="card-footer"><span class="card-badge">3 Cases</span><span class="card-arrow">→</span></div></a>
+    <a class="activity-card" href="recency.html"><div class="card-module">Part 4: Bias Series</div><h3 class="card-title">Recency Bias</h3><p class="card-desc"><strong>Whole year or last month?</strong> Decide whether each review comment covers the whole year or only the last month.</p><div class="card-footer"><span class="card-badge">3 Cases</span><span class="card-arrow">→</span></div></a>
+  </div>
 </div>
 <script src="app.js"></script>
 </body>
