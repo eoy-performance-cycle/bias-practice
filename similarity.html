@@ -3,18 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Results or rapport? | Bias practice | Floward People &amp; Culture</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+<title>Similarity Bias | Bias Lab | Floward</title>
+<link rel="stylesheet" href="star.css">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<div class="wrap">
-<header><span class="wm"></span><span>People &amp; Culture</span></header>
-<main id="app" aria-live="polite"></main>
+<div class="gate" id="emailGate">
+  <div class="gate-card">
+    <div class="gate-logo brand-logo" role="img" aria-label="Floward"></div>
+    <div class="gate-kicker">Manager Evaluation Practice</div>
+    <h1 class="gate-title">Bias Lab</h1>
+    <p class="gate-desc">Enter your Floward email to begin.</p>
+    <form class="gate-form" id="gateForm" novalidate>
+      <label class="form-label" for="emailInput" style="margin-bottom:0;">Floward Email</label>
+      <input type="email" class="form-input" id="emailInput" placeholder="name@floward.com" autocomplete="email" maxlength="80" required>
+      <div class="gate-error" id="emailError" role="alert"></div>
+      <button type="submit" class="btn btn-primary">Continue →</button>
+    </form>
+    <div class="gate-note">Only @floward.com addresses can access this practice.</div>
+  </div>
 </div>
-<script>window.C = {"bias": "Similarity Bias", "title": "Results or rapport?", "num": "2 of 4", "intro": "Read each review comment. Decide whether it rests on results or on rapport, then justify your answer.", "labels": ["Results", "Rapport"], "items": [{"who": "Nour, Finance Analyst", "text": "Nour approaches problems exactly the way I do, so I trust her judgment completely. Top marks.", "answer": 1, "why": "Working the way the manager does is similarity, not performance. The rating needs results behind it."}, {"who": "Karim, Sales Executive", "text": "Karim works very differently from me, but he hit all four quarterly targets and his client feedback averaged 4.6 out of 5.", "answer": 0, "why": "The manager notices the difference in style and still rates on results. That is the standard to aim for."}, {"who": "Laila, HR Business Partner", "text": "Laila and I studied at the same university. She just gets how we work here.", "answer": 1, "why": "A shared background creates warmth, but it is not a performance criterion."}], "fix": "Nour", "fixPrompt": "Rewrite the comment about Nour so it rests on results. What would you need to know?", "fixHint": "For example: Nour closed the quarterly accounts three days early and cut reconciliation errors by half.", "key": "similarity", "reflect": "am I rating this person’s results, or how similar they are to me?", "others": [["halo.html", "Halo Effect", "Halo or evidence?"], ["contrast.html", "Contrast Bias", "Role or comparison?"], ["recency.html", "Recency Bias", "Whole year or last month?"]]};</script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo-img brand-logo" role="img" aria-label="Floward"></div>
+    <span class="logo-text">Floward L&amp;D</span>
+  </div>
+  <div class="nav-right">
+    <button class="learner-name-display hidden" id="learnerDisplay" style="cursor:pointer;font:inherit;font-size:13px" title="Not you? Click to change"></button>
+  </div>
+</header>
+<div class="screen active">
+  <div class="activity-topbar">
+    <div class="activity-title-area">
+      <a class="btn btn-ghost btn-sm" href="index.html">← Home</a>
+      <div><div class="activity-module-tag">Part 2 / Bias Series</div><div class="activity-title-text">Similarity Bias: Results or rapport?</div></div>
+    </div>
+    <div class="activity-actions">
+      <div class="timer-widget"><span class="timer-display" id="timer">00:00</span><button class="timer-btn" id="tbtn" aria-label="Start or pause timer">▶</button><button class="timer-btn" id="treset" aria-label="Reset timer">↻</button></div>
+    </div>
+  </div>
+  <div class="activity-content" id="activityContent"></div>
+</div>
+<script>window.C = {"bias": "Similarity Bias", "title": "Results or rapport?", "num": "2 of 4", "intro": "Read each review comment. Decide whether it rests on results or on rapport, then justify your answer.", "labels": ["Results", "Rapport"], "items": [{"who": "Nour, Finance Analyst", "text": "Nour approaches problems exactly the way I do, so I trust her judgment completely. Top marks.", "answer": 1, "why": "Working the way the manager does is similarity, not performance. The rating needs results behind it."}, {"who": "Karim, Sales Executive", "text": "Karim works very differently from me, but he hit all four quarterly targets and his client feedback averaged 4.6 out of 5.", "answer": 0, "why": "The manager notices the difference in style and still rates on results. That is the standard to aim for."}, {"who": "Laila, HR Business Partner", "text": "Laila and I studied at the same university. She just gets how we work here.", "answer": 1, "why": "A shared background creates warmth, but it is not a performance criterion."}], "fix": "Nour", "fixPrompt": "Rewrite the comment about Nour so it rests on results. What would you need to know?", "fixHint": "For example: Nour closed the quarterly accounts three days early and cut reconciliation errors by half.", "key": "similarity", "reflect": "am I rating this person’s results, or how similar they are to me?", "others": [["halo.html", "Halo Effect", "Halo or evidence?", "1"], ["contrast.html", "Contrast Bias", "Role or comparison?", "3"], ["recency.html", "Recency Bias", "Whole year or last month?", "4"]]};</script>
 <script src="app.js"></script>
 </body>
 </html>
