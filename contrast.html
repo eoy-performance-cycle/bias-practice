@@ -3,18 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Role or comparison? | Bias practice | Floward People &amp; Culture</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+<title>Contrast Bias | Bias Lab | Floward</title>
+<link rel="stylesheet" href="star.css">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<div class="wrap">
-<header><span class="wm"></span><span>People &amp; Culture</span></header>
-<main id="app" aria-live="polite"></main>
+<div class="gate" id="emailGate">
+  <div class="gate-card">
+    <div class="gate-logo brand-logo" role="img" aria-label="Floward"></div>
+    <div class="gate-kicker">Manager Evaluation Practice</div>
+    <h1 class="gate-title">Bias Lab</h1>
+    <p class="gate-desc">Enter your Floward email to begin.</p>
+    <form class="gate-form" id="gateForm" novalidate>
+      <label class="form-label" for="emailInput" style="margin-bottom:0;">Floward Email</label>
+      <input type="email" class="form-input" id="emailInput" placeholder="name@floward.com" autocomplete="email" maxlength="80" required>
+      <div class="gate-error" id="emailError" role="alert"></div>
+      <button type="submit" class="btn btn-primary">Continue →</button>
+    </form>
+    <div class="gate-note">Only @floward.com addresses can access this practice.</div>
+  </div>
 </div>
-<script>window.C = {"bias": "Contrast Bias", "title": "Role or comparison?", "num": "3 of 4", "intro": "Read each review comment. Decide whether it measures against the role or against a colleague, then justify your answer.", "labels": ["Role standard", "Comparison"], "items": [{"who": "Ziad, Operations Coordinator", "text": "After reviewing Yasmin, our top performer, Ziad’s work looks fairly average.", "answer": 1, "why": "Ziad is being measured against Yasmin, not against what his role requires."}, {"who": "Hadi, Logistics Specialist", "text": "Against the role’s expectation of 95% on-time delivery, Hadi delivered 97% this year.", "answer": 0, "why": "The rating is anchored to the role’s defined expectation, not to a colleague."}, {"who": "Dana, Customer Care Lead", "text": "Compared with the rest of the team, Dana seems a little less organised.", "answer": 1, "why": "A comparison with the team replaces the role standard. What does the role actually expect?"}], "fix": "Ziad", "fixPrompt": "Rewrite the comment about Ziad so it measures against the role. What would you need to know?", "fixHint": "For example: Ziad met the role’s turnaround target of 48 hours on 92% of requests.", "key": "contrast", "reflect": "am I comparing this person to the job standard, or to a colleague?", "others": [["halo.html", "Halo Effect", "Halo or evidence?"], ["similarity.html", "Similarity Bias", "Results or rapport?"], ["recency.html", "Recency Bias", "Whole year or last month?"]]};</script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo-img brand-logo" role="img" aria-label="Floward"></div>
+    <span class="logo-text">Floward L&amp;D</span>
+  </div>
+  <div class="nav-right">
+    <button class="learner-name-display hidden" id="learnerDisplay" style="cursor:pointer;font:inherit;font-size:13px" title="Not you? Click to change"></button>
+  </div>
+</header>
+<div class="screen active">
+  <div class="activity-topbar">
+    <div class="activity-title-area">
+      <a class="btn btn-ghost btn-sm" href="index.html">← Home</a>
+      <div><div class="activity-module-tag">Part 3 / Bias Series</div><div class="activity-title-text">Contrast Bias: Role or comparison?</div></div>
+    </div>
+    <div class="activity-actions">
+      <div class="timer-widget"><span class="timer-display" id="timer">00:00</span><button class="timer-btn" id="tbtn" aria-label="Start or pause timer">▶</button><button class="timer-btn" id="treset" aria-label="Reset timer">↻</button></div>
+    </div>
+  </div>
+  <div class="activity-content" id="activityContent"></div>
+</div>
+<script>window.C = {"bias": "Contrast Bias", "title": "Role or comparison?", "num": "3 of 4", "intro": "Read each review comment. Decide whether it measures against the role or against a colleague, then justify your answer.", "labels": ["Role standard", "Comparison"], "items": [{"who": "Ziad, Operations Coordinator", "text": "After reviewing Yasmin, our top performer, Ziad’s work looks fairly average.", "answer": 1, "why": "Ziad is being measured against Yasmin, not against what his role requires."}, {"who": "Hadi, Logistics Specialist", "text": "Against the role’s expectation of 95% on-time delivery, Hadi delivered 97% this year.", "answer": 0, "why": "The rating is anchored to the role’s defined expectation, not to a colleague."}, {"who": "Dana, Customer Care Lead", "text": "Compared with the rest of the team, Dana seems a little less organised.", "answer": 1, "why": "A comparison with the team replaces the role standard. What does the role actually expect?"}], "fix": "Ziad", "fixPrompt": "Rewrite the comment about Ziad so it measures against the role. What would you need to know?", "fixHint": "For example: Ziad met the role’s turnaround target of 48 hours on 92% of requests.", "key": "contrast", "reflect": "am I comparing this person to the job standard, or to a colleague?", "others": [["halo.html", "Halo Effect", "Halo or evidence?", "1"], ["similarity.html", "Similarity Bias", "Results or rapport?", "2"], ["recency.html", "Recency Bias", "Whole year or last month?", "4"]]};</script>
 <script src="app.js"></script>
 </body>
 </html>
