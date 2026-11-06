@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results or rapport? | Bias practice | Floward People &amp; Culture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="wrap">
+<header><span class="wm"></span><span>People &amp; Culture</span></header>
+<main id="app" aria-live="polite"></main>
+</div>
+<script>window.C = {"bias": "Similarity Bias", "title": "Results or rapport?", "num": "2 of 4", "intro": "Read each review comment. Decide whether it rests on results or on rapport, then justify your answer.", "labels": ["Results", "Rapport"], "items": [{"who": "Nour, Finance Analyst", "text": "Nour approaches problems exactly the way I do, so I trust her judgment completely. Top marks.", "answer": 1, "why": "Working the way the manager does is similarity, not performance. The rating needs results behind it."}, {"who": "Karim, Sales Executive", "text": "Karim works very differently from me, but he hit all four quarterly targets and his client feedback averaged 4.6 out of 5.", "answer": 0, "why": "The manager notices the difference in style and still rates on results. That is the standard to aim for."}, {"who": "Laila, HR Business Partner", "text": "Laila and I studied at the same university. She just gets how we work here.", "answer": 1, "why": "A shared background creates warmth, but it is not a performance criterion."}], "fix": "Nour", "fixPrompt": "Rewrite the comment about Nour so it rests on results. What would you need to know?", "fixHint": "For example: Nour closed the quarterly accounts three days early and cut reconciliation errors by half.", "key": "similarity", "reflect": "am I rating this person’s results, or how similar they are to me?", "others": [["halo.html", "Halo Effect", "Halo or evidence?"], ["contrast.html", "Contrast Bias", "Role or comparison?"], ["recency.html", "Recency Bias", "Whole year or last month?"]]};</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
