@@ -3,18 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Whole year or last month? | Bias practice | Floward People &amp; Culture</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+<title>Recency Bias | Bias Lab | Floward</title>
+<link rel="stylesheet" href="star.css">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<div class="wrap">
-<header><span class="wm"></span><span>People &amp; Culture</span></header>
-<main id="app" aria-live="polite"></main>
+<div class="gate" id="emailGate">
+  <div class="gate-card">
+    <div class="gate-logo brand-logo" role="img" aria-label="Floward"></div>
+    <div class="gate-kicker">Manager Evaluation Practice</div>
+    <h1 class="gate-title">Bias Lab</h1>
+    <p class="gate-desc">Enter your Floward email to begin.</p>
+    <form class="gate-form" id="gateForm" novalidate>
+      <label class="form-label" for="emailInput" style="margin-bottom:0;">Floward Email</label>
+      <input type="email" class="form-input" id="emailInput" placeholder="name@floward.com" autocomplete="email" maxlength="80" required>
+      <div class="gate-error" id="emailError" role="alert"></div>
+      <button type="submit" class="btn btn-primary">Continue →</button>
+    </form>
+    <div class="gate-note">Only @floward.com addresses can access this practice.</div>
+  </div>
 </div>
-<script>window.C = {"bias": "Recency Bias", "title": "Whole year or last month?", "num": "4 of 4", "intro": "Read each review comment. Decide whether it reflects the whole year or just the latest moment, then justify your answer.", "labels": ["Whole year", "Latest moment"], "items": [{"who": "Sami, Category Manager", "text": "Sami’s big mistake last month says everything about his reliability.", "answer": 1, "why": "One recent event is standing in for the whole review period."}, {"who": "Huda, Senior Buyer", "text": "Across the year, Huda met 11 of 12 monthly targets. The one miss in September was recovered the following month.", "answer": 0, "why": "The full period is reviewed and the one miss is weighed in proportion."}, {"who": "Ahmed, Data Analyst", "text": "Ahmed has been brilliant these last few weeks, so I am rating his whole year as outstanding.", "answer": 1, "why": "Recency works in both directions. A strong finish can inflate a rating just as a late mistake can deflate one."}], "fix": "Sami", "fixPrompt": "Rewrite the comment about Sami so it reflects the whole year. What would you need to know?", "fixHint": "For example: Sami met his sourcing targets in three of four quarters; one late-year error was corrected within a week.", "key": "recency", "reflect": "have I reviewed the full performance period, not just the last few weeks?", "others": [["halo.html", "Halo Effect", "Halo or evidence?"], ["similarity.html", "Similarity Bias", "Results or rapport?"], ["contrast.html", "Contrast Bias", "Role or comparison?"]]};</script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo-img brand-logo" role="img" aria-label="Floward"></div>
+    <span class="logo-text">Floward L&amp;D</span>
+  </div>
+  <div class="nav-right">
+    <button class="learner-name-display hidden" id="learnerDisplay" style="cursor:pointer;font:inherit;font-size:13px" title="Not you? Click to change"></button>
+  </div>
+</header>
+<div class="screen active">
+  <div class="activity-topbar">
+    <div class="activity-title-area">
+      <a class="btn btn-ghost btn-sm" href="index.html">← Home</a>
+      <div><div class="activity-module-tag">Part 4 / Bias Series</div><div class="activity-title-text">Recency Bias: Whole year or last month?</div></div>
+    </div>
+    <div class="activity-actions">
+      <div class="timer-widget"><span class="timer-display" id="timer">00:00</span><button class="timer-btn" id="tbtn" aria-label="Start or pause timer">▶</button><button class="timer-btn" id="treset" aria-label="Reset timer">↻</button></div>
+    </div>
+  </div>
+  <div class="activity-content" id="activityContent"></div>
+</div>
+<script>window.C = {"bias": "Recency Bias", "title": "Whole year or last month?", "num": "4 of 4", "intro": "Read each review comment. Decide whether it reflects the whole year or just the latest moment, then justify your answer.", "labels": ["Whole year", "Latest moment"], "items": [{"who": "Sami, Category Manager", "text": "Sami’s big mistake last month says everything about his reliability.", "answer": 1, "why": "One recent event is standing in for the whole review period."}, {"who": "Huda, Senior Buyer", "text": "Across the year, Huda met 11 of 12 monthly targets. The one miss in September was recovered the following month.", "answer": 0, "why": "The full period is reviewed and the one miss is weighed in proportion."}, {"who": "Ahmed, Data Analyst", "text": "Ahmed has been brilliant these last few weeks, so I am rating his whole year as outstanding.", "answer": 1, "why": "Recency works in both directions. A strong finish can inflate a rating just as a late mistake can deflate one."}], "fix": "Sami", "fixPrompt": "Rewrite the comment about Sami so it reflects the whole year. What would you need to know?", "fixHint": "For example: Sami met his sourcing targets in three of four quarters; one late-year error was corrected within a week.", "key": "recency", "reflect": "have I reviewed the full performance period, not just the last few weeks?", "others": [["halo.html", "Halo Effect", "Halo or evidence?", "1"], ["similarity.html", "Similarity Bias", "Results or rapport?", "2"], ["contrast.html", "Contrast Bias", "Role or comparison?", "3"]]};</script>
 <script src="app.js"></script>
 </body>
 </html>
