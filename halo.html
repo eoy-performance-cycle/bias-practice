@@ -3,18 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Halo or evidence? | Bias practice | Floward People &amp; Culture</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display&display=swap" rel="stylesheet">
+<title>Halo Effect | Bias Lab | Floward</title>
+<link rel="stylesheet" href="star.css">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
-<div class="wrap">
-<header><span class="wm"></span><span>People &amp; Culture</span></header>
-<main id="app" aria-live="polite"></main>
+<div class="gate" id="emailGate">
+  <div class="gate-card">
+    <div class="gate-logo brand-logo" role="img" aria-label="Floward"></div>
+    <div class="gate-kicker">Manager Evaluation Practice</div>
+    <h1 class="gate-title">Bias Lab</h1>
+    <p class="gate-desc">Enter your Floward email to begin.</p>
+    <form class="gate-form" id="gateForm" novalidate>
+      <label class="form-label" for="emailInput" style="margin-bottom:0;">Floward Email</label>
+      <input type="email" class="form-input" id="emailInput" placeholder="name@floward.com" autocomplete="email" maxlength="80" required>
+      <div class="gate-error" id="emailError" role="alert"></div>
+      <button type="submit" class="btn btn-primary">Continue →</button>
+    </form>
+    <div class="gate-note">Only @floward.com addresses can access this practice.</div>
+  </div>
 </div>
-<script>window.C = {"bias": "Halo Effect", "title": "Halo or evidence?", "num": "1 of 4", "intro": "Read each review comment. Decide whether it rests on evidence or on a halo, then justify your answer.", "labels": ["Evidence", "Halo"], "items": [{"who": "Rania, Marketing Specialist", "text": "Rania is our best presenter, so I have rated her highly on planning and budgeting too.", "answer": 1, "why": "Presenting well says nothing about planning or budgeting. Each competency needs its own evidence."}, {"who": "Omar, Procurement Analyst", "text": "Omar closed 11 of 12 supplier contracts on time and reduced costs by 6%, so I rated his delivery highly.", "answer": 0, "why": "The rating is tied to specific, measurable results in the area being rated."}, {"who": "Faisal, Account Manager", "text": "Everyone loves working with Faisal. His overall rating should be at the top of the scale.", "answer": 1, "why": "Being well liked is real, but it is an impression, not evidence of overall performance."}], "fix": "Faisal", "fixPrompt": "Rewrite the comment about Faisal so it rests on evidence. What would you need to know?", "fixHint": "For example: Faisal met 9 of 10 client targets this year and resolved escalations within two days.", "key": "halo", "reflect": "am I rating actual performance in each area, or my overall impression of this person?", "others": [["similarity.html", "Similarity Bias", "Results or rapport?"], ["contrast.html", "Contrast Bias", "Role or comparison?"], ["recency.html", "Recency Bias", "Whole year or last month?"]]};</script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<header class="site-header">
+  <div class="logo-area">
+    <div class="logo-img brand-logo" role="img" aria-label="Floward"></div>
+    <span class="logo-text">Floward L&amp;D</span>
+  </div>
+  <div class="nav-right">
+    <button class="learner-name-display hidden" id="learnerDisplay" style="cursor:pointer;font:inherit;font-size:13px" title="Not you? Click to change"></button>
+  </div>
+</header>
+<div class="screen active">
+  <div class="activity-topbar">
+    <div class="activity-title-area">
+      <a class="btn btn-ghost btn-sm" href="index.html">← Home</a>
+      <div><div class="activity-module-tag">Part 1 / Bias Series</div><div class="activity-title-text">Halo Effect: Halo or evidence?</div></div>
+    </div>
+    <div class="activity-actions">
+      <div class="timer-widget"><span class="timer-display" id="timer">00:00</span><button class="timer-btn" id="tbtn" aria-label="Start or pause timer">▶</button><button class="timer-btn" id="treset" aria-label="Reset timer">↻</button></div>
+    </div>
+  </div>
+  <div class="activity-content" id="activityContent"></div>
+</div>
+<script>window.C = {"bias": "Halo Effect", "title": "Halo or evidence?", "num": "1 of 4", "intro": "Read each review comment. Decide whether it rests on evidence or on a halo, then justify your answer.", "labels": ["Evidence", "Halo"], "items": [{"who": "Rania, Marketing Specialist", "text": "Rania is our best presenter, so I have rated her highly on planning and budgeting too.", "answer": 1, "why": "Presenting well says nothing about planning or budgeting. Each competency needs its own evidence."}, {"who": "Omar, Procurement Analyst", "text": "Omar closed 11 of 12 supplier contracts on time and reduced costs by 6%, so I rated his delivery highly.", "answer": 0, "why": "The rating is tied to specific, measurable results in the area being rated."}, {"who": "Faisal, Account Manager", "text": "Everyone loves working with Faisal. His overall rating should be at the top of the scale.", "answer": 1, "why": "Being well liked is real, but it is an impression, not evidence of overall performance."}], "fix": "Faisal", "fixPrompt": "Rewrite the comment about Faisal so it rests on evidence. What would you need to know?", "fixHint": "For example: Faisal met 9 of 10 client targets this year and resolved escalations within two days.", "key": "halo", "reflect": "am I rating actual performance in each area, or my overall impression of this person?", "others": [["similarity.html", "Similarity Bias", "Results or rapport?", "2"], ["contrast.html", "Contrast Bias", "Role or comparison?", "3"], ["recency.html", "Recency Bias", "Whole year or last month?", "4"]]};</script>
 <script src="app.js"></script>
 </body>
 </html>
